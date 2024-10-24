@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeju Gallery</title>
+    <style>  
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff3df;
+            border-bottom: 1px solid #ccc;
+        }
+
+        #logo img {
+            height: 85px;
+        }
+
+        #menu {
+            display: flex;
+            gap: 20px;
+            font-size: 16px;
+        }
+
+        #menu li {
+            list-style-type: none;
+            display: inline;
+        }
+
+        .item {
+            margin: 0 10px;
+        }
+
+        #menu li.separator {
+            color: #ff9900;
+        }
+
+        .gallery-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #975b00;
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .gallery li {
+            display: inline-block;
+            margin: 0 10px; /* 이미지 사이에 간격 추가 */
+        }
+
+        .gallery img {
+            width: 1300px; /* 이미지 크기 더 크게 설정 */
+            height: auto;
+            display: block;
+            margin: 0 auto; /* 이미지 가운데 정렬 */
+        }
+
+        footer {
+            background-color: #fceabb;
+            padding: 20px;
+            display: flex;
+            justify-content: center; /* 항목을 가운데 정렬 */
+            align-items: center;
+            gap: 20px; /* 항목 사이 간격 조정 */
+            color: #555;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #ff9900;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+        #menu li a {
+    text-decoration: none; /* 밑줄 제거 */
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html">
+                <img src="제주로고캡쳐누끼버전.png" alt="Jeju Logo">
+            </a>
+        </div>
+        <ul id="menu">
+            <li><a href='jeju.html' class='item'>JEJU</a></li>
+            <li>｜</li>
+            <li><a href='shop.html' class='item'>SHOP</a></li>
+            <li>｜</li>
+            <li><a href='food.html' class='item'>FOOD</a></li>
+            <li>｜</li>
+            <li><a href='festival3.html' class='item'>FESTIVAL</a></li>
+            <li>｜</li>
+            <li><a href='news.html' class='item'>NEWS</a></li>
+        </ul>
+    </header>
+    
+    <div class="gallery-container">
+        <h2>JEJU 맛집</h2>
+        <ul class="gallery">
+            <li><img src="제주 맛집.png" alt="Jeju 맛집"></li>
+        </ul>
+    </div>
+    <div class="gallery-container">
+        <h2>JEJU 맛집 지도</h2>
+        <ul class="gallery">
+            <li><img src="제주 맛집2.png" alt="Jeju 맛집 지도"></li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Jeju Travel Website.</p>
+        <p>Contact us: <a href="mailto:yeon0514seo@gmail.com">yeon0514seo@gmail.com</a></p>
+    </footer>
+</body>
+</html>
+

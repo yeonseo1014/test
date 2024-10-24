@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff3df;
+            border-bottom: 1px solid #ccc;
+        }
+
+        #logo img {
+            height: 85px; 
+        }
+
+        #menu {
+            display: flex;
+            gap: 20px;
+            font-size: 16px;
+        }
+
+        #menu li {
+            list-style-type: none;
+            display: inline;
+        }
+
+        #menu a {
+            text-decoration: none; /* 밑줄 제거 */
+            font-size: 16px;
+            color: #000000;
+        }
+
+        #menu li.separator {
+            color: #ff9900;
+        }
+
+        #main_title {
+            text-align: center;
+            font-family: 'JejuHallasan', sans-serif; /* 제주한라산 폰트 적용 */
+            font-size: 36px;
+            margin: 40px 0;
+            background-color: #f5f5f5; /* 배경색 지정 */
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); /* 5열 레이아웃 */
+            gap: 20px;
+            padding: 0 40px;
+        }
+
+        .gallery-item {
+            background-color: #e6e6e6;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .gallery-item h3 {
+            font-size: 18px;
+            margin: 15px 0;
+        }
+
+        .gallery-item p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        footer {
+            background-color: #fceabb;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            color: #555;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #ff9900;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html">
+                <img src="제주로고캡쳐누끼버전.png" alt="Jeju Logo">
+            </a>
+        </div>
+        <ul id="menu">
+            <li><a href='jeju.html' class='item'>JEJU</a></li>
+            <li>｜</li>
+            <li><a href='shop.html' class='item'>SHOP</a></li>
+            <li>｜</li>
+            <li><a href='food.html' class='item'>FOOD</a></li>
+            <li>｜</li>
+            <li><a href='festival3.html' class='item'>FESTIVAL</a></li>
+            <li>｜</li>
+            <li><a href='news.html' class='item'>NEWS</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <h1 id="main_title">이런 축제 어때요?</h1>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="제주 축제1.jpg" alt="축제사진">
+                <h3>휴애리 핑크뮬리 축제</h3>
+                <p>로맨틱한 핑크빛 풍경 속에서 잊지 못할 추억을 만들어 보세요</p>
+                <p><strong>일정:</strong> 2024.09.13 ~ 2024.11.17</p>
+                <p><strong>가격:</strong> 유료</p>
+                <p><strong>장소:</strong> 제주특별자치도 서귀포시 남원읍 신례동로 256</p>
+                <p><strong>연락처:</strong> 064-732-2114</p>
+            </div>
+            <div class="gallery-item">
+                <img src="제주 축제2.png" alt="축제사진">
+                <h3>9.81파크 억새바당</h3>
+                <p>억새, 바다, 아름다운 제주 노을까지 한 눈에 볼 수 있는 제주 유일 스팟</p>
+                <p><strong>일정:</strong> 2024.10.01 ~ 2024.11.30</p>
+                <p><strong>가격:</strong> 무료</p>
+                <p><strong>장소:</strong> 제주특별자치도 제주시 애월읍 천덕로 880-24</p>
+                <p><strong>연락처:</strong> 1833-9810</p>
+            </div>
+            <div class="gallery-item">
+                <img src="제주 축제3.jpg" alt="축제사진">
+                <h3>제주민속촌 국화축제</h3>
+                <p>제주에서 가장 제주다운 곳, 제주 민속촌</p>
+                <p><strong>일정:</strong> 2024.10.25 ~ 2024.11.24</p>
+                <p><strong>가격:</strong> 유료</p>
+                <p><strong>장소:</strong> 제주특별자치도 서귀포시 표선면 민속해안로 631-34</p>
+                <p><strong>연락처:</strong> 064-787-4501</p>
+            </div>
+            <div class="gallery-item">
+                <img src="제주 축제4.jpg" alt="축제사진">
+                <h3>제주마 축제</h3>
+                <p>제주특별자치도 대표 제주마 축제</p>
+                <p><strong>일정:</strong> 2024.10.26 ~ 2024.10.27</p>
+                <p><strong>가격:</strong> 무료</p>
+                <p><strong>장소:</strong> 제주특별자치도 제주시 애월읍 평화로 2144 렛츠런파크 제주</p>
+                <p><strong>연락처:</strong> 1566-3333</p>
+            </div>
+            <div class="gallery-item">
+                <img src="제주 축제5.jpg" alt="축제사진">
+                <h3>제주밭담축제</h3>
+                <p>FAO세계중요농업유산인 빛나는 제주밭담, 그 가치를 알리다!</p>
+                <p><strong>일정:</strong> 2024.11.02 ~ 2024.11.03</p>
+                <p><strong>가격:</strong> 무료(밭담길 걷기 프로그램 유료)</p>
+                <p><strong>장소:</strong> 제주특별자치도 제주시 구좌읍 월정리 1400-14</p>
+                <p><strong>연락처:</strong> 064-744-9108</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Jeju Travel Website.</p>
+        <p>Contact us: <a href="mailto:yeon0514seo@gmail.com">yeon0514seo@gmail.com</a></p>
+    </footer>
+</body>
+</html>

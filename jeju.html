@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeju Gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff3df;
+            border-bottom: 1px solid #ccc;
+        }
+
+        #logo img {
+            height: 85px;
+        }
+
+        #menu {
+            display: flex;
+            gap: 20px;
+            font-size: 16px;
+        }
+
+        #menu li {
+            list-style-type: none;
+            display: inline;
+        }
+
+        .item {
+            margin: 0 10px;
+        }
+        #menu a {
+    font-size: 16px; /* 모든 메뉴 항목의 글씨 크기를 동일하게 지정 */
+    color: #000; /* 원하는 글자 색상으로 설정 */
+    text-decoration: none;
+}
+
+        #menu li.separator {
+            color: #ff9900;
+        }
+        h3 {
+            padding-left: 10;
+            border-left: solid 8px orange;
+        }
+        p {
+            width: 500px;
+            border: solid 1px black;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .gallery-container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #975b00;
+            margin-bottom: 20px;
+        }
+
+        ul.gallery {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        ul.gallery li {
+            list-style-type: none;
+        }
+
+        ul.gallery img {
+            width: 200px;
+            height: 150px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .text-container {
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    h3 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 18px;
+        color: #555;
+        margin-bottom: 20px;
+        line-height: 1.5;
+        text-align: center;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .text-container h3 {
+        display: inline-block;
+        padding-bottom: 5px;
+    }
+    #tae-img {
+    width: 20%; /* 원하는 크기 */
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.audio-player {
+    position: absolute;
+    top: 120%; /* 원하는 위치로 조정 */
+    left: 50%; /* 가운데 정렬 */
+    transform: translate(-50%, -50%); /* 정렬 보정 */
+    z-index: 10; /* 이미지 위에 표시되도록 z-index 설정 */
+}
+footer {
+        background-color: #fceabb;
+        padding: 20px;
+        display: flex;
+        justify-content: center; /* 항목을 가운데 정렬 */
+        align-items: center;
+        gap: 20px; /* 항목 사이 간격 조정 */
+        color: #555;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    footer p {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    footer a {
+        color: #ff9900;
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+    #menu li a {
+    text-decoration: none; /* 밑줄 제거 */
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html">
+                <img src="제주로고캡쳐누끼버전.png" alt="Jeju Logo">
+            </a>
+        </div>
+        <ul id="menu">
+            <li><a href='jeju.html' class='item'>JEJU</a></li>
+            <li>｜</li>
+            <li><a href='shop.html' class='item'>SHOP</a></li>
+            <li>｜</li>
+            <li><a href='food2.html' class='item'>FOOD</a></li>
+            <li>｜</li>
+            <li><a href='festival3.html' class='item'>FESTIVAL</a></li>
+            <li>｜</li>
+            <li><a href='news.html' class='item'>NEWS</a></li>
+        </ul>
+    </header>
+    <div class="gallery-container">
+        <h2>JEJU GALLERY</h2>
+        <ul class="gallery">
+            <li><img src="이미지갤러리1.jpg"></li>
+            <li><img src="이미지갤러리2.jpg"></li>
+            <li><img src="이미지갤러리3.jpg"></li>
+            <li><img src="이미지갤러리4.jpg"></li>
+            <li><img src="이미지갤러리5.jpg"></li>
+        </ul>
+    </div>
+    <div class="text-container">
+        <h3>제주에서 느끼는 완벽한 휴식과 힐링</h3>
+        <p>번잡한 일상에서 벗어나 제주에서 느끼는 여유로운 순간. 자연과 어우러진 평온한 시간을 보내세요</p>
+    </div>
+    <div class="text-container">
+    <h3>제주로 떠날 때 듣기 좋은</h3>
+    </div>
+    <audio controls class="audio-player">
+        <source src="태연-제주도의푸른밤.mp3" type="audio/mp3">
+    </audio>
+    <img src="태연1.jpg"id="tae-img">
+    <footer>
+        <p>&copy; 2024 Jeju Travel Website.</p>
+        <p>Contact us: <a href="yeon0514seo@gmail.com">yeon0514seo@gmail.com</a></p>
+    </footer>
+</style>
+</body>
+</html>

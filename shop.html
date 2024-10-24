@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeju Goods</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff3df;
+            border-bottom: 1px solid #ccc;
+        }
+
+        #logo img {
+            height: 85px; /* 로고 크기 조절 */
+        }
+
+        #menu {
+            display: flex;
+            gap: 20px;
+            font-size: 16px;
+        }
+
+        #menu li {
+            list-style-type: none;
+            display: inline;
+        }
+
+        .item {
+            margin: 0 10px;
+        }
+
+        #menu li.separator {
+            color: #ff9900;
+        }
+
+        #main_image img {
+            width: 100vw; 
+            height: 80vh; 
+            object-fit: cover; 
+            object-position: center; 
+        }
+
+        .goods-image {
+            max-width: 180px;
+            height: auto;
+            margin-right: 20px; 
+            float: left;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        #main_title {
+            font-family: '맑은 고딕';
+            margin: 20px;
+            padding-bottom: 6px;
+            border-bottom: solid 2px #aaaaaa;
+        }
+
+        .list_item {
+            display: flex;
+            align-items: center;
+            margin: 10px;
+            border-bottom: solid 1px #cccccc;
+            padding-bottom: 10px;
+        }
+
+        .intro {
+            flex-grow: 1;
+            max-width: 60%;
+        }
+
+        .price {
+            color: red;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+        #menu a {
+    font-size: 16px; /* 모든 메뉴 항목의 글씨 크기를 동일하게 지정 */
+    color: #000; /* 원하는 글자 색상으로 설정 */
+    text-decoration: none;
+}
+
+        .small {
+            font-size: 12px;
+            margin-top: 5px;
+            color: black;
+        }
+
+        .writer {
+            width: 150px;
+            white-space: nowrap;
+        }
+        footer {
+            background-color: #fceabb;
+            padding: 20px;
+            display: flex;
+            justify-content: center; /* 항목을 가운데 정렬 */
+            align-items: center;
+            gap: 20px; /* 항목 사이 간격 조정 */
+            color: #555;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #ff9900;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+        #menu li a {
+    text-decoration: none; /* 밑줄 제거 */
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html">
+                <img src="제주로고캡쳐누끼버전.png" alt="Jeju Logo">
+            </a>
+        </div>
+        <ul id="menu">
+            <li><a href='jeju.html' class='item'>JEJU</a></li>
+            <li>｜</li>
+            <li><a href='shop.html' class='item'>SHOP</a></li>
+            <li>｜</li>
+            <li><a href='food2.html' class='item'>FOOD</a></li>
+            <li>｜</li>
+            <li><a href='festival3.html' class='item'>FESTIVAL</a></li>
+            <li>｜</li>
+            <li><a href='news.html' class='item'>NEWS</a></li>
+        </ul>
+    </header>
+
+    <h3 id="main_title">제주 굿즈 목록</h3>
+    <!-- 첫 번째 상품 -->
+    <div class="list_item">
+        <img src="제주 굿즈1.png" class="goods-image">
+        <div class="intro"><strong>[굿즈]</strong> !주문폭주! 제주 돌하르방 자석</div>
+        <ul class="price">
+            <li>10,000원</li>
+            <li class="small">배송비 3,000원</li>
+        </ul>
+        <div class="writer">스마트 스토어 [오달콤제주]</div>
+    </div>
+    <!-- 두 번째 상품 -->
+    <div class="list_item">
+        <img src="제주 굿즈2.png" class="goods-image">
+        <div class="intro"><strong>[굿즈]</strong> *MZ* 말랑말랑 쫀득쫀득 무무친구들 인형키링</div>
+        <ul class="price">
+            <li>11,000원</li>
+            <li class="small">배송비 3,000원</li>
+        </ul>
+        <div class="writer">스마트 스토어 [무무제주]</div>
+    </div>
+    <!-- 세 번째 상품 -->
+    <div class="list_item">
+        <img src="제주 굿즈6.png" class="goods-image">
+        <div class="intro"><strong>[굿즈]</strong> ^커플템추천^ 제주 귤 뜨개 키링</div>
+        <ul class="price">
+            <li>9,000원</li>
+            <li class="small">배송비 3,000원</li>
+        </ul>
+        <div class="writer">스마트 스토어 [오달콤제주]</div>
+    </div>
+    <!-- 네 번째 상품 -->
+    <div class="list_item">
+        <img src="제주 굿즈3.png" class="goods-image">
+        <div class="intro"><strong>[간식]</strong>-선물 추천-허쉬 초콜릿칩 감귤 모찌쿠키</div>
+        <ul class="price">
+            <li>6,000원</li>
+            <li class="small">배송비 3,500원</li>
+        </ul>
+        <div class="writer">스마트 스토어 [썸제주]</div>
+    </div>
+    <!-- 다섯 번째 상품 -->
+    <div class="list_item">
+        <img src="제주 굿즈4.png" class="goods-image">
+        <div class="intro"><strong>[간식]</strong>제주감귤쫀드기 감귤쫀득이 30개입</div>
+        <ul class="price">
+            <li>15,900원</li>
+            <li class="small">무료배송</li>
+        </ul>
+        <div class="writer">스마트 스토어 [순수한집]</div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Jeju Travel Website.</p>
+        <p>Contact us: <a href="mailto:yeon0514seo@gmail.com">yeon0514seo@gmail.com</a></p>
+    </footer>
+</body>
+</html>
+

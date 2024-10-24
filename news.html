@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeju Community</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff3df;
+            border-bottom: 2px solid #ccc;
+        }
+        #menu a {
+    font-size: 16px; /* 모든 메뉴 항목의 글씨 크기를 동일하게 지정 */
+    color: #000; /* 원하는 글자 색상으로 설정 */
+    text-decoration: none;
+}
+
+        #logo img {
+            height: 85px;
+        }
+        #menu a {
+    font-size: 16px; /* 모든 메뉴 항목의 글씨 크기를 동일하게 지정 */
+    color: #000; /* 원하는 글자 색상으로 설정 */
+    text-decoration: none;
+}
+
+        #menu {
+            display: flex;
+            gap: 20px;
+            font-size: 16px;
+            list-style-type: none;
+        }
+
+        #menu li {
+            display: inline;
+        }
+
+        .item {
+            margin: 0 10px;
+        }
+
+        #menu li.separator {
+            color: #ff9900;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 50px 0;
+            font-size: 36px;
+            color: #333;
+        }
+
+        .community-section {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .community-card {
+            background-color: #fff;
+            width: 30%;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+
+        .community-card:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .community-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .community-card h3 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .community-card p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        footer {
+            background-color: #fff3df;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #555;
+            margin-top: 40px;
+        }
+        .gallery-container {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .gallery-container h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+        background-color: #fceabb;
+        padding: 20px;
+        display: flex;
+        justify-content: center; /* 항목을 가운데 정렬 */
+        align-items: center;
+        gap: 20px; /* 항목 사이 간격 조정 */
+        color: #555;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    footer p {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    footer a {
+        color: #ff9900;
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+    #menu li a {
+    text-decoration: none; /* 밑줄 제거 */
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html">
+                <img src="제주로고캡쳐누끼버전.png" alt="Jeju Logo">
+            </a>
+        </div>
+        <ul id="menu">
+            <li><a href='jeju.html' class='item'>JEJU</a></li>
+            <li>｜</li>
+            <li><a href='shop.html' class='item'>SHOP</a></li>
+            <li>｜</li>
+            <li><a href='food2.html' class='item'>FOOD</a></li>
+            <li>｜</li>
+            <li><a href='festival3.html' class='item'>FESTIVAL</a></li>
+            <li>｜</li>
+            <li><a href='news.html' class='item'>NEWS</a></li>
+        </ul>
+    </header>
+
+    <h1>Jeju News</h1>
+
+    <div class="community-section">
+        <div class="community-card">
+            <h3>[제주소식]제주밭한끼 페스티벌</h3>
+            <p>제주시 농촌신활력플러스사업추진단은 '2024 제주밭한끼 페스티벌'에 함께할 참가자를 모집한다고 24일 밝혔다.</p>
+            <p>11월 1일부터 12일간 제주 곳곳에서 펼쳐지는 2024 제주밭한끼 페스티벌은 제주 밭작물의 우수성을 알리기 위한 축제다.</p>
+        </div>
+        <div class="community-card">
+            <h3>[제주사건]삼무공원서 흉기에 찔려..</h3>
+            <p>24일 제주서부경찰서에 따르면 이날 오후 2시쯤 한 남성이 흉기에 찔려 피를 흘린다는 신고가 접수됐다.</p>
+            <p>신고를 받고 출동한 구급대는 현장에 도착해 인근 병원으로 이송했지만 끝내 사망했다.</p>
+        </div>
+        <div class="community-card">
+            <h3>[제주소식]신화월드 새집 달아주기</h3>
+            <p>23일 오전 제주 서귀포시 안덕면 제주신화전설탐방로 신나락만나락에서
+                제주신화월드가 운영하는 장애인표준사업장 행복공작소와 한국장애인고용공단 관계자들이 새집 달아주기 행사를 진행하고 있다.</p>
+        </div>
+    </div>
+    <div class="gallery-container">
+        <h2>News Gallery</h2>
+        <div class="gallery">
+            <img src="제주 뉴스1.jpg" alt="Gallery Image 1">
+            <img src="제주 뉴스2.jpg" alt="Gallery Image 2">
+            <img src="제주 뉴스3.jpeg" alt="Gallery Image 3">
+            <img src="제주 뉴스4.jpg" alt="Gallery Image 4">
+            <img src="제주 뉴스5.jpg" alt="Gallery Image 5">
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Jeju Travel Website.</p>
+        <p>Contact us: <a href="mailto:yeon0514seo@gmail.com">yeon0514seo@gmail.com</a></p>
+    </footer>
+</html>
